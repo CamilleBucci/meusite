@@ -5,104 +5,6 @@
     font-weight: 100;
 }
 
-@font-face {
-    font-family: 'Montserrat ExtraLight';
-    src: url(../fonts/Montserrat-ExtraLight.ttf) format('truetype');
-    font-style: normal;
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: 'Montserrat Light';
-    src: url(../fonts/Montserrat-Light.ttf) format('truetype');
-    font-style: normal;
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Montserrat Light Italic';
-    src: url(../fonts/Montserrat-LightItalic.ttf) format('truetype');
-    font-style: italic;
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Montserrat Regular';
-    src: url(../fonts/Montserrat-Regular.ttf) format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat Medium';
-    src: url(../fonts/Montserrat-Medium.ttf) format('truetype');
-    font-style: normal;
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Montserrat Medium Italic';
-    src: url(../fonts/Montserrat-MediumItalic.ttf) format('truetype');
-    font-style: italic;
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Montserrat SemiBold';
-    src: url(../fonts/Montserrat-SemiBold.ttf) format('truetype');
-    font-style: normal;
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Montserrat SemiBold Italic';
-    src: url(../fonts/Montserrat-SemiBoldItalic.ttf) format('truetype');
-    font-style: italic;
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Montserrat Bold';
-    src: url(../fonts/Montserrat-Bold.ttf) format('truetype');
-    font-style: normal;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Montserrat Bold Italic';
-    src: url(../fonts/Montserrat-BoldItalic.ttf) format('truetype');
-    font-style: italic;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Montserrat ExtraBold';
-    src: url(../fonts/Montserrat-ExtraBold.ttf) format('truetype');
-    font-style: normal;
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'Montserrat ExtraBold Italic';
-    src: url(../fonts/Montserrat-ExtraBoldItalic.ttf) format('truetype');
-    font-style: italic;
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'Montserrat Black';
-    src: url(../fonts/Montserrat-Black.ttf) format('truetype');
-    font-style: normal;
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: 'Montserrat Black Italic';
-    src: url(../fonts/Montserrat-BlackItalic.ttf) format('truetype');
-    font-style: italic;
-    font-weight: 900;
-}
-
 html { 
     min-height: 100%;
     min-width: 100%; 
@@ -139,7 +41,7 @@ a {
 .header-main {
     width: 100%;
     height: 60px;
-    padding-left: 150px;
+    padding-left: 130px;
     display: flex;
     justify-content: space-between;
 }
@@ -174,11 +76,15 @@ a {
 
 .header-main-nav-link {
     margin-top: 20px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-image: url(../img/linkedin-green.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /* antialiasing */
+    outline: 1px solid transparent;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .header-main-nav-link:hover {
@@ -187,11 +93,15 @@ a {
 
 .header-main-nav-git {
     margin-top: 20px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-image: url(../img/github-green.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /* antialiasing */
+    outline: 1px solid transparent;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .header-main-nav-git:hover {
@@ -200,11 +110,15 @@ a {
 
 .header-main-nav-telegram {
     margin-top: 20px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-image: url(../img/telegram-green.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /* antialiasing */
+    outline: 1px solid transparent;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .header-main-nav-telegram:hover {
@@ -213,11 +127,15 @@ a {
 
 .header-main-nav-whats {
     margin-top: 20px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-image: url(../img/whats-green.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /* antialiasing */
+    outline: 1px solid transparent;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .header-main-nav-whats:hover {
@@ -226,8 +144,8 @@ a {
 
 .header-main-nav-email {
     margin-top: 20px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-image: url(../img/email-green.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -254,7 +172,7 @@ a {
 @media only screen and (max-width: 600px) {
     
     .header-main {
-        padding-left: 25%;
+        padding-left: 17%;
     }
 
 }
