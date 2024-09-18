@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-image: url(../img/code.jpg);
+    background-image: url(../img/computer-screen.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1000;
@@ -32,40 +32,43 @@ a {
 
 .wrapper-main {
     width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    flex-wrap: wrap;   
 }
 
-.wrapper-main .logo {
-    display: block;    
+.logo {
+    width: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 .header-main {
     width: 100%;
     height: 60px;
-    padding-left: 130px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .header-main-nav {
-    width: fit-content;
-    /* background-color: #fff; */
+    width: 600px;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .header-main-nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-main-nav ul li {
     display: inline;
-    float: left;
+    padding: 0 10px;
 }
 
 .header-main-nav ul li a {
-    padding: 0 10px;
-    font-family: 'Montserrat Bold', sans-serif;
-    line-height: 60px;
-    color: #7ed957;
     display: block;
     height: 100%;
 }
@@ -167,12 +170,4 @@ a {
 
 .footer-main a:hover{
     opacity: 0.8;
-}
-
-@media only screen and (max-width: 600px) {
-    
-    .header-main {
-        padding-left: 17%;
-    }
-
 }
