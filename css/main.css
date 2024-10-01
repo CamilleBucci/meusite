@@ -1,3 +1,8 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
 @font-face {
     font-family: 'Montserrat Thin';
     src: url(../fonts/Montserrat-Thin.ttf) format('truetype');
@@ -12,6 +17,7 @@ html {
 
 body {
     background-image: url(../img/computer-screen.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1000;
@@ -34,7 +40,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: flex-end; 
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -73,10 +79,6 @@ a {
     height: 100%;
 }
 
-.header-main-nav ul li a:hover {
-    color: #fff;
-}
-
 .header-main-nav-link {
     margin-top: 20px;
     width: 30px;
@@ -84,31 +86,38 @@ a {
     background-image: url(../img/linkedin-green.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     /* antialiasing */
     outline: 1px solid transparent;
     transform: translateZ(0);
     will-change: transform;
+    box-shadow: 0px 0px 25px #7ed957;
+    border-radius: 20px;
 }
 
 .header-main-nav-link:hover {
-    background-image: url(../img/linkedin.png);
+    background-image: url(../img/linkedin-white.png);
+    box-shadow: 0px 0px 25px #92d3a5;
 }
 
 .header-main-nav-git {
     margin-top: 20px;
     width: 30px;
     height: 30px;
-    background-image: url(../img/github-green.png);
+    background-image: url(../img/github-green.png); 
     background-repeat: no-repeat;
     background-size: cover;
     /* antialiasing */
     outline: 1px solid transparent;
     transform: translateZ(0);
     will-change: transform;
+    box-shadow: 0px 0px 25px #7ed957;
+    border-radius: 20px;
 }
 
 .header-main-nav-git:hover {
-    background-image: url(../img/github.png);
+    background-image: url(../img/github-white.png);
+    box-shadow: 0px 0px 25px #92d3a5;
 }
 
 .header-main-nav-telegram {
@@ -122,27 +131,34 @@ a {
     outline: 1px solid transparent;
     transform: translateZ(0);
     will-change: transform;
+    box-shadow: 0px 0px 25px #7ed957;
+    border-radius: 20px;
 }
 
 .header-main-nav-telegram:hover {
-    background-image: url(../img/telegram.png);
+    background-image: url(../img/telegram-white.png);
+    box-shadow: 0px 0px 25px #92d3a5;
 }
 
 .header-main-nav-whats {
     margin-top: 20px;
     width: 30px;
     height: 30px;
-    background-image: url(../img/whats-green.png);
+    background-image: url(../img/whatsapp-green.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     /* antialiasing */
     outline: 1px solid transparent;
     transform: translateZ(0);
     will-change: transform;
+    box-shadow: 0px 0px 25px #7ed197;
+    border-radius: 20px 20px 20px 0;
 }
 
 .header-main-nav-whats:hover {
-    background-image: url(../img/whats.png);
+    background-image: url(../img/whatsapp-white.png);
+    box-shadow: 0px 0px 25px #92d3a5;
 }
 
 .header-main-nav-email {
@@ -152,14 +168,18 @@ a {
     background-image: url(../img/email-green.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     /* antialiasing */
     outline: 1px solid transparent;
     transform: translateZ(0);
     will-change: transform;
+    box-shadow: 0px 0px 25px #7ed957;
+    border-radius: 13px;
 }
 
 .header-main-nav-email:hover {
-    background-image: url(../img/email.png);
+    background-image: url(../img/email-white.png);
+    box-shadow: 0px 0px 25px #92d3a5;
 }
 
 .footer-main {
@@ -171,7 +191,7 @@ a {
 }
 
 .footer-main a:hover{
-    opacity: 0.8;
+    text-shadow: 0px 0px 25px white;
 }
 
 .footer-main p {
