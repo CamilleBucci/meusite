@@ -29,7 +29,7 @@ body:after{
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(../img/telegram.png) url(../img/github.png) url(../img/linkedin.png) url(../img/whats.png) url(../img/email.png);
+    content: url(../img/telegram-white.png) url(../img/github-white.png) url(../img/linkedin-white.png) url(../img/whatsapp-white.png) url(../img/email-white.png);
 }
 
 a {
